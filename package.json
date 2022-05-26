@@ -1,0 +1,27 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAR Photo APP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umutbozbek/PCAT.git"
+  },
+  "keywords": [
+    "photo",
+    "app",
+    "camera"
+  ],
+  "author": "Umut Bozbek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umutbozbek/PCAT/issues"
+  },
+  "homepage": "https://github.com/umutbozbek/PCAT#readme",
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}
