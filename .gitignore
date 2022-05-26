@@ -142,4 +142,8 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+# ignore ALL files in ANY directory named temp
+temp/
+
 # End of https://www.toptal.com/developers/gitignore/api/node
+
