@@ -13,7 +13,8 @@ app.set("view engine","ejs")
 
 //MİDDLEWARES
 app.use(express.static('public'))
-
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
 
 //Rautes
@@ -25,6 +26,11 @@ app.get('/about', (req, res,) => {
 })
 app.get('/add', (req, res,) => {
   res.render('add')
+})
+
+app.post('/photos', (req, res,) => {
+  console.log(req.body);
+  res.redirect('/')
 })
 
 
