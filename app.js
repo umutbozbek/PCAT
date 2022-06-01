@@ -1,28 +1,30 @@
 const express = require('express')
 const path = require('path')
+const ejs=require('ejs')
+
 
 const app = express();
 
-// const myLogger=(req,res,next)=>{
-//     console.log('middleware log 1');
-//     next();
-// }
+//Tamplate ENGINE
+app.set("view engine","ejs")
 
-// const myLogger2=(req,res,next)=>{
-//     console.log('middleware log 2');
-//     next();
-// }
+
 
 
 //MİDDLEWARES
 app.use(express.static('public'))
-// app.use(myLogger)
-// app.use(myLogger2)
 
 
 
+//Rautes
 app.get('/', (req, res,) => {
-    res.sendFile(path.resolve(__dirname, 'temp/index.html'))
+  res.render('index')
+})
+app.get('/about', (req, res,) => {
+  res.render('about')
+})
+app.get('/add', (req, res,) => {
+  res.render('add')
 })
 
 
